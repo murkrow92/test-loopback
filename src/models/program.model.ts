@@ -1,18 +1,17 @@
-import {Entity, model, property} from '@loopback/repository';
+import { Entity, model, property } from '@loopback/repository';
 
 @model()
 export class Program extends Entity {
   @property({
     type: 'string',
-    required: true,
+    required: true
   })
   title: string;
 
   @property({
-    type: 'string',
+    type: 'string'
   })
   description?: string;
-
 
   constructor(data?: Partial<Program>) {
     super(data);
